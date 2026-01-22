@@ -1,0 +1,3 @@
+dataset//Email-Enron 0.9 0.6 8 _ 0.961538 _
+dataset//ego-facebook 0.9 0.6 8 _ 0.967773 _
+dataset//witter_combined 0.9 0.6 8 _ 0.979417 _
