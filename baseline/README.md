@@ -7,6 +7,3 @@ This folder contains the source code and executables for **four baseline methods
 **NBSim** and **FastNBSim** are both executed via the same `NBSim` binary.  
 You can switch between the two algorithms by providing different runtime parameters (i.e., there is only one executable in `NBSim`, but it supports running **two** algorithms through parameter settings).
 
-For detailed usage instructions and parameter configurations, please refer to the official documentation in:
-
-- https://github.com/PJYasuna/LargeQCDetection
