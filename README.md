@@ -1,24 +1,35 @@
-# Anonymous Repository: EDQC Experiments
+# EDQC
 
-This anonymous repository provides the experimental scripts and partial results for the paper:
+This repository provides the implementation, experimental scripts, and demo results for EDQC.
 
-**“Cohesive Group Discovery in Interaction Graphs under Explicit Density Constraints.”**
+Our paper titled **“Cohesive Group Discovery in Interaction Graphs under Explicit Density Constraints”** has been accepted by SIGIR 2026.
 
-## Quick Start (Demo Reproducibility)
+## Overview
 
-Reviewers can reproduce the demo results by cloning this repository and running:
+EDQC is an algorithm for discovering cohesive groups in interaction graphs under explicit density constraints. This repository contains the source code and scripts needed to reproduce the demo experiments included with the repository.
+
+For storage reasons, this repository includes only three demo dataset instances for a lightweight reproducibility check. The full datasets used in the paper are publicly available from the SNAP and the Network Data Repository benchmarks.
+
+## Compilation
+
+Compile the EDQC executable with:
+
+```bash
+g++ edqc.cpp -O3 -o edqc
+```
+
+## Quick Start
+
+To reproduce the demo results, run:
 
 ```bash
 bash run_edqc.sh
 ```
 
-For storage reasons, this repository only includes **three demo dataset instances** for a minimal reproducibility check.
+The script executes EDQC on the three included demo instances and reports the corresponding results.
 
-## Full Datasets
+## Datasets
 
-All datasets used in the paper’s full experiments are publicly available from the **Stanford SNAP repository**.
+The repository includes three demo dataset instances.
 
-## Notes
-
-* This repository is released for **anonymous review** purposes.
-* The demo script reproduces results on the included three instances only; reproducing the full experimental results requires downloading the complete datasets from SNAP.
+The full experimental evaluation in the paper uses datasets from the SNAP and the Network Data Repository benchmarks. To reproduce the complete experimental results, please download the corresponding datasets and place them in the expected input format (.dimacs) and directory structure used by the scripts.
